@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embed Test - Text Comparison Tool</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    p { color: #666; margin-bottom: 20px; }
+    h2 { font-size: 1.1rem; color: #333; margin: 32px 0 12px; }
+    .card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .card-header {
+      background: #1e1b4b;
+      color: white;
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+    .card-header .size { color: #a5b4fc; font-size: 12px; }
+    .card-header a {
+      color: #c7d2fe;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .card-header a:hover { color: white; }
+    iframe {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>iframe 埋め込みテスト</h1>
+  <p>embed=1 パラメータ付きで、異なる高さの iframe での表示を確認できます。</p>
+
+  <h2>height=800px</h2>
+  <div class="card">
+    <div class="card-header">
+      <span>校異源氏物語 vs NDL本 <span class="size">(800px)</span></span>
+      <a href="/ja?manifest1=https://genji-ai.web.app/iiif/koui/koui-01/manifest.json&canvas1=https://genji-ai.web.app/iiif/koui/canvas/5&manifest2=https://genji-ai.web.app/iiif/ndl_2585098/ndl_2585098-01/manifest.json&canvas2=https://www.dl.ndl.go.jp/api/iiif/2585098/canvas/3&label1=校異源氏物語&label2=NDL本" target="_blank">新しいウインドウで開く ↗</a>
+    </div>
+    <iframe
+      src="/ja?manifest1=https://genji-ai.web.app/iiif/koui/koui-01/manifest.json&canvas1=https://genji-ai.web.app/iiif/koui/canvas/5&manifest2=https://genji-ai.web.app/iiif/ndl_2585098/ndl_2585098-01/manifest.json&canvas2=https://www.dl.ndl.go.jp/api/iiif/2585098/canvas/3&label1=校異源氏物語&label2=NDL本&embed=1&mode=1"
+      height="800"
+    ></iframe>
+  </div>
+
+  <h2>height=500px</h2>
+  <div class="card">
+    <div class="card-header">
+      <span>校異源氏物語 vs NDL本 <span class="size">(500px)</span></span>
+    </div>
+    <iframe
+      src="/ja?manifest1=https://genji-ai.web.app/iiif/koui/koui-01/manifest.json&canvas1=https://genji-ai.web.app/iiif/koui/canvas/5&manifest2=https://genji-ai.web.app/iiif/ndl_2585098/ndl_2585098-01/manifest.json&canvas2=https://www.dl.ndl.go.jp/api/iiif/2585098/canvas/3&label1=校異源氏物語&label2=NDL本&embed=1&mode=1"
+      height="500"
+    ></iframe>
+  </div>
+
+  <h2>height=350px</h2>
+  <div class="card">
+    <div class="card-header">
+      <span>校異源氏物語 vs NDL本 <span class="size">(350px)</span></span>
+    </div>
+    <iframe
+      src="/ja?manifest1=https://genji-ai.web.app/iiif/koui/koui-01/manifest.json&canvas1=https://genji-ai.web.app/iiif/koui/canvas/5&manifest2=https://genji-ai.web.app/iiif/ndl_2585098/ndl_2585098-01/manifest.json&canvas2=https://www.dl.ndl.go.jp/api/iiif/2585098/canvas/3&label1=校異源氏物語&label2=NDL本&embed=1&mode=1"
+      height="350"
+    ></iframe>
+  </div>
+</body>
+</html>

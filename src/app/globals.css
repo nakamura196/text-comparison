@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4f46e5;
+  --color-primary-dark: #4338ca;
+}
+
+/* Diff styles */
+.diff-del {
+  text-decoration: none;
+  color: #b30000;
+  background: #fadad7;
+  border-radius: 2px;
+}
+.diff-ins {
+  text-decoration: none;
+  color: #406619;
+  background: #eaf2c2;
+  border-radius: 2px;
+}
+
+/* Reset text-transform */
+* {
+  text-transform: none !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* OpenSeadragon container */
+.openseadragon-container {
+  outline: none;
+}
