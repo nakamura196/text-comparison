@@ -1,8 +1,7 @@
 {
   "name": "text-comparison",
   "version": "2.0.0",
-  "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev -p 3109",
     "build": "next build",
